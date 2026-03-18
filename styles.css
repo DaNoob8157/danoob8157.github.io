@@ -184,7 +184,6 @@ h1 {
   min-height: 104px;
   padding: 0.6rem;
   margin-bottom: 0.9rem;
-  border: 1px solid var(--line);
   border-radius: 14px;
   background: color-mix(in srgb, var(--surface), transparent 24%);
 }
@@ -219,6 +218,11 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.icon-row a {
+  display: inline-flex;
+  color: inherit;
+}
+
 .icon-row img {
   width: 40px;
   height: 40px;
@@ -226,6 +230,11 @@ a:hover {
   background: rgba(255, 255, 255, 0.45);
   border-radius: 5px;
   padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.icon-row a:hover img {
+  transform: scale(1.1);
 }
 
 .split {
